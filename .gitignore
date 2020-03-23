@@ -11,6 +11,9 @@
 /build
 /src/firebase.js
 
+#Sass map file.
+dist/css/main.css.map
+
 # misc
 .DS_Store
 .env.local
