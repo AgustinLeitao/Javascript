@@ -6,8 +6,20 @@
 }
 
 .home {
-  height: 100vh;
-  padding-top: 40vh;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
   text-align: center;
   background: -webkit-gradient(linear, left top, right top, from(rgba(99, 96, 96, 0.9)), to(rgba(99, 96, 96, 0.3))), url("../img/home.jpg") center top;
@@ -17,6 +29,7 @@
 
 .home__name {
   font-size: 5rem;
+  width: 100%;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #fff;
@@ -202,8 +215,7 @@
 }
 
 .contact {
-  height: 100vh;
-  padding-top: 40vh;
+  height: 100%;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,6 +227,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: -webkit-gradient(linear, left top, right top, from(rgba(99, 96, 96, 0.9)), to(rgba(99, 96, 96, 0.3))), url("../img/home.jpg") center top;
   background: linear-gradient(to right, rgba(99, 96, 96, 0.9), rgba(99, 96, 96, 0.3)), url("../img/home.jpg") center top;
   background-size: cover;
@@ -222,7 +237,10 @@
 
 .contact h2 {
   font-size: 3rem;
+  text-align: center;
+  width: 100%;
   margin-bottom: 2rem;
+  border-bottom: 2px solid #fff;
 }
 
 .contact__list {
